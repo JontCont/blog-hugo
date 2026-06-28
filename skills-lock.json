@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "rules-bridge": {
+      "source": "JontCont/rules-bridge",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "f9e3601c3ba8986922113a2d0793874e135022451eb1717c5fad493c92ca4faf"
+    }
+  }
+}
