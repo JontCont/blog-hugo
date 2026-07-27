@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "skills": {
+    "frontend-design": {
+      "source": "smithery.ai",
+      "sourceType": "well-known",
+      "computedHash": "02a36ed61efe8cc2792b87138d4fdf1c8927ab424351565d7439664c816674e1"
+    },
+    "rules-bridge": {
+      "source": "JontCont/rules-bridge",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "f9e3601c3ba8986922113a2d0793874e135022451eb1717c5fad493c92ca4faf"
+    }
+  }
+}

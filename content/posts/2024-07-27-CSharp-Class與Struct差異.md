@@ -7,7 +7,6 @@ categories = ['後端技術', 'C#', '筆記']
 tags = ['C#']
 keywords = []
 image = '/image/20240727_01-42-16.png'
-weight = 1
 +++
 
 近期要學習 C# reocrd，因此想要先了解一下 Class 與 Struct 的差異，以下是筆記。

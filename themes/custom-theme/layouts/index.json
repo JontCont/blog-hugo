@@ -1,4 +1,4 @@
-{{- $pages := where site.RegularPages "RelPermalink" "ne" "/search/" -}}
+{{- $pages := site.RegularPages -}}
 [
 {{- range $index, $page := $pages -}}
   {{- if gt $index 0 }},{{ end -}}
