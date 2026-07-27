@@ -1,6 +1,6 @@
 baseURL = 'http://localhost:1313/'
 title = 'JConte'
-theme = 'hugo-theme-stack'
+theme = 'custom-theme'
 paginate = 12
 hasCJKLanguage = true
 defaultContentLanguage = 'zh-tw'
@@ -37,39 +37,49 @@ defaultContentLanguage = 'zh-tw'
     icon = 'home'
 
 [[languages.zh-tw.menus.main]]
-  name   = '關於'
-  url    = '/about/'
-  weight = 2
-  [languages.zh-tw.menus.main.params]
-    icon = 'user'
-
-[[languages.zh-tw.menus.main]]
-  name   = '標籤'
-  url    = '/tags/'
-  weight = 3
-  [languages.zh-tw.menus.main.params]
-    icon = 'tag'
-
-[[languages.zh-tw.menus.main]]
+  identifier = 'categories'
   name   = '分類'
-  url    = '/categories/'
-  weight = 4
+  weight = 2
   [languages.zh-tw.menus.main.params]
     icon = 'categories'
 
 [[languages.zh-tw.menus.main]]
+  parent = 'categories'
+  name   = '分類總覽'
+  url    = '/categories/'
+  weight = 1
+  [languages.zh-tw.menus.main.params]
+    icon = 'categories'
+
+[[languages.zh-tw.menus.main]]
+  parent = 'categories'
+  name   = '標籤'
+  url    = '/tags/'
+  weight = 2
+  [languages.zh-tw.menus.main.params]
+    icon = 'tag'
+
+[[languages.zh-tw.menus.main]]
+  parent = 'categories'
   name   = '圖片檔'
   url    = '/gallery/'
-  weight = 5
+  weight = 3
   [languages.zh-tw.menus.main.params]
     icon = 'link'
 
 [[languages.zh-tw.menus.main]]
   name   = '歸檔'
   url    = '/archives/'
-  weight = 6
+  weight = 3
   [languages.zh-tw.menus.main.params]
     icon = 'archives'
+
+[[languages.zh-tw.menus.main]]
+  name   = '關於'
+  url    = '/about/'
+  weight = 4
+  [languages.zh-tw.menus.main.params]
+    icon = 'user'
 
 # ─── English Menu ──────────────────────────────────────
 [[languages.en.menus.main]]
@@ -80,39 +90,49 @@ defaultContentLanguage = 'zh-tw'
     icon = 'home'
 
 [[languages.en.menus.main]]
-  name   = 'About'
-  url    = '/about/'
-  weight = 2
-  [languages.en.menus.main.params]
-    icon = 'user'
-
-[[languages.en.menus.main]]
-  name   = 'Tags'
-  url    = '/tags/'
-  weight = 3
-  [languages.en.menus.main.params]
-    icon = 'tag'
-
-[[languages.en.menus.main]]
+  identifier = 'categories'
   name   = 'Categories'
-  url    = '/categories/'
-  weight = 4
+  weight = 2
   [languages.en.menus.main.params]
     icon = 'categories'
 
 [[languages.en.menus.main]]
+  parent = 'categories'
+  name   = 'All Categories'
+  url    = '/categories/'
+  weight = 1
+  [languages.en.menus.main.params]
+    icon = 'categories'
+
+[[languages.en.menus.main]]
+  parent = 'categories'
+  name   = 'Tags'
+  url    = '/tags/'
+  weight = 2
+  [languages.en.menus.main.params]
+    icon = 'tag'
+
+[[languages.en.menus.main]]
+  parent = 'categories'
   name   = 'Gallery'
   url    = '/gallery/'
-  weight = 5
+  weight = 3
   [languages.en.menus.main.params]
     icon = 'link'
 
 [[languages.en.menus.main]]
   name   = 'Archives'
   url    = '/archives/'
-  weight = 6
+  weight = 3
   [languages.en.menus.main.params]
     icon = 'archives'
+
+[[languages.en.menus.main]]
+  name   = 'About'
+  url    = '/about/'
+  weight = 4
+  [languages.en.menus.main.params]
+    icon = 'user'
 
 # [[menus.social]]
 #   name = 'GitHub'

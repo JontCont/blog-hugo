@@ -4,21 +4,23 @@
   <section class="blog-layout">
     <div class="blog-main-col">
       <div class="view-toggle" role="group" aria-label="{{ T "displayMode" }}">
-        <button type="button" class="view-toggle__btn" data-view-btn="list">≡ {{ T "listView" }}</button>
+        <button type="button" class="view-toggle__btn view-toggle__btn--active" data-view-btn="list">≡ {{ T "listView" }}</button>
         <button type="button" class="view-toggle__btn" data-view-btn="grid">⊞ {{ T "gridView" }}</button>
       </div>
       <div class="blog-main" id="blog-main">
       {{ range $paginator.Pages }}
         {{ $post := . }}
         <article class="entry-card">
-          <a href="{{ $post.RelPermalink }}" class="entry-card__cover-wrap{{ if not .Params.image }} entry-card__cover-wrap--empty{{ end }}" aria-label="{{ $post.Title }}">
+          <a href="{{ $post.RelPermalink }}" class="entry-card__cover-wrap" aria-label="{{ $post.Title }}">
             {{ with .Params.image }}
               {{ $img := . }}
               {{ if strings.HasPrefix $img "http" }}
-                <img class="entry-card__cover" src="{{ $img }}" alt="{{ $post.Title }}">
+                <img class="entry-card__cover" src="{{ $img }}" alt="{{ $post.Title }}" loading="lazy">
               {{ else }}
-                <img class="entry-card__cover" src="{{ (strings.TrimPrefix "/" $img) | relURL }}" alt="{{ $post.Title }}">
+                <img class="entry-card__cover" src="{{ (strings.TrimPrefix "/" $img) | relURL }}" alt="{{ $post.Title }}" loading="lazy">
               {{ end }}
+            {{ else }}
+              <img class="entry-card__cover" src="{{ "images/default-cover.png" | relURL }}" alt="{{ $post.Title }}" loading="lazy">
             {{ end }}
           </a>
           <div class="entry-card__body">
