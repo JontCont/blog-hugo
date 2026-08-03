@@ -1,6 +1,6 @@
 +++
 title = '【前端】TypeScript / JS 物件宣告與轉型差異：new vs {} vs {} as T'
-date = '2026-08-03T14:55:00'
+date = '2025-10-20T14:55:00'
 slug = '-前端-TS-物件建立與轉型-new-vs-object-vs-object-as-T'
 description = '深入探討 TypeScript 與 JavaScript 中物件宣告的各種方式：使用 new 實例化、{} 字面量物件與 {} as T 型態斷言的差異、陷阱與最佳實務。'
 categories = ['前端技術', 'TypeScript']
