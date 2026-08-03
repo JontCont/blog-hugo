@@ -134,7 +134,7 @@ version: "3"
 
 services:
   n8n:
-    image: n8nio/n8n:latest
+    image: n8n-demo/n8n:latest
     container_name: n8n
     restart: always
     ports:
@@ -213,7 +213,7 @@ Tunnel 建好之後，Cloudflare 通常會自動建立一筆 `CNAME`：
 
 | 類型 | 名稱 | 內容 | Proxy 狀態 |
 |------|------|------|------------|
-| CNAME | `n8nio` | `<TunnelID>.cfargotunnel.com` | `Proxied` |
+| CNAME | `n8n-demo` | `<TunnelID>.cfargotunnel.com` | `Proxied` |
 
 這邊一定要確認是橘色雲朵，也就是 `Proxied`。
 

@@ -39,7 +39,7 @@ setup("authenticate", async ({ page, browser }) => {
 
 這邊我們封不動作在 setup 裡面，命名上官方使用 ```auth.setup.ts``` 來區分是驗證的動作，這樣之後要使用的時候就可以直接呼叫這個 setup 來使用。
 
-### 二、設定環境 plawright.config.ts
+### 二、設定環境 playwright.config.ts
 
 說明以下範例。他是把全部的setup 都放在一起來執行，之後會透握 user.json 來驗證身分，如果沒有這個檔案就會重新登入。
 需要注意對應的瀏覽器若需要登入情況下，需要加入 ```dependencies: ["auth.setup"]``` 來告訴他需要先登入。 ```storageState: ".auth/user.json"``` 這個是用來存放登入資訊的檔案，每次執行它會抓一次 ```storageState```給瀏覽器。
