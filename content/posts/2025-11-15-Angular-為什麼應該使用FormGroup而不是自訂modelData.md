@@ -1,4 +1,5 @@
 +++
+image = '/image/20251115_angular_formgroup_cover.jpg'
 title = '【Angular】表單開發解析：為什麼應該使用 FormGroup 而不是自訂 modelData？'
 date = '2025-11-15T10:00:00'
 slug = 'Angular-為什麼應該使用FormGroup而不是自訂modelData'

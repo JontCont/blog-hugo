@@ -1,4 +1,5 @@
 +++
+image = '/image/20251020_ts_object_cover.jpg'
 title = '【前端】TypeScript / JS 物件宣告與轉型差異：new vs {} vs {} as T'
 date = '2025-10-20T14:55:00'
 slug = '-前端-TS-物件建立與轉型-new-vs-object-vs-object-as-T'

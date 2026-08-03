@@ -1,4 +1,5 @@
 +++
+image = '/image/20251205_vscode_permissions_cover.jpg'
 title = '【工具】VS Code / AI Agent 權限配置指南：chat.permissions.default 設定與 Auto Approve 自動核准機制'
 date = '2025-12-05T10:00:00'
 slug = 'VSC-AI工具-chat-permissions-default-設定與Auto-Approve自動核准機制'
