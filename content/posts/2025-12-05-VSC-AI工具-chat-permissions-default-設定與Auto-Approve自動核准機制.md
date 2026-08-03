@@ -16,6 +16,9 @@ keywords = ['chat.permissions.default', 'Auto Approved', 'AI Agent', 'VSCode', '
 
 本篇將深入介紹 `chat.permissions.default` 設定的作用、配置方式以及安全注意事項。
 
+### 參考文件
+- [VS Code Official Docs — Agent Approvals and Permission Levels](https://code.visualstudio.com/docs/agents/approvals#_permission-levels)
+
 ---
 
 ## 一、 什麼是 `chat.permissions.default`？
