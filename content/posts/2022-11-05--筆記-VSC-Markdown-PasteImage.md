@@ -7,7 +7,7 @@ description = ''
 categories = ['筆記', '生活雜記']
 tags = ['VSC']
 keywords = []
-image = '/img/Note/other/20221001_11-35-37.png'
+image = '/image/20221001_11-35-37.png'
 +++
 
 VSC MarkDown 有提供截圖工具 Markdown PasteImage，近期需要即時貼上圖片會方便許多，簡單簡述Markdown PasteImage 使用方式。

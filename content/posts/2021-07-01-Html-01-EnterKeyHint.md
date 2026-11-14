@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'html']
 tags = ['front-end', '前端']
 keywords = ['HTML']
-image = '/img/html-enterkeyHint/enterkeyHint.jpg'
+image = '/image/enterkeyHint.jpg'
 +++
 
 ## 前言

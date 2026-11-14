@@ -7,7 +7,7 @@ description = ''
 categories = ['DevOps', 'Github']
 tags = ['Github']
 keywords = ['Github', 'Token']
-image = '/img/GitHub/bg/bg_01.jpg'
+image = '/image/bg_01.jpg'
 +++
 Github merge 遇到衝突的問題已經是常有的事情，既然要 merge 需要將新舊的資料比對、修改。Github 有提供網頁版本可以直接將衝突檔案修改後再merge。
 

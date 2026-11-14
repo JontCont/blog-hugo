@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'C#']
 tags = ['MVC', 'Core', 'Electron', 'C#']
 keywords = []
-image = '/img/dotnet/Electron/bg.png'
+image = '/image/bg.png'
 +++
 ## 前言
 Electron 是近年來有比較多人使用的架框，最大原因是在 Winform 跨平台上無法使用，因此誕生 Electron架框。

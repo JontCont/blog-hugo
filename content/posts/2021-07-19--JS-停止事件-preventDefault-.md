@@ -7,7 +7,7 @@ description = ''
 categories = ['前端技術', 'javascript']
 tags = ['javascript']
 keywords = ['ES6', '停止事件', 'Param']
-image = '/img/Web/js/js-serialize/bg.png'
+image = '/image/bg.png'
 +++
 
 近期遇到比較麻煩的問題"非同步"問題，像是form submit之前不能確保一定完成執行，相對需要使用所謂的sleep相關作法，一開始以為可以成功結果一觸發事件就會submit 事件...。

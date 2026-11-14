@@ -6,7 +6,7 @@ description = ''
 categories = ['筆記', 'Hexo']
 tags = ['HEXO']
 keywords = []
-image = '/img/Hexo/day_03_UseHexo/hexo.png'
+image = '/image/hexo.png'
 +++
 這篇主要使要紀錄設定 package json 。 
 

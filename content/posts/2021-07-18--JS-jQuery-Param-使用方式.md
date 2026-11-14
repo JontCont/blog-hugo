@@ -7,7 +7,7 @@ description = ''
 categories = ['前端技術', 'javascript']
 tags = ['javascript']
 keywords = ['ES6', '參數', 'Param']
-image = '/img/Web/js/js-serialize/bg.png'
+image = '/image/bg.png'
 +++
 
 # 參數（Param）

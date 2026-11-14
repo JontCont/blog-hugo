@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'React']
 tags = ['React']
 keywords = ['ES6', 'ReactJs', '網頁']
-image = '/img/Web/react/react_bg.png'
+image = '/image/react_bg.png'
 +++
 
 在上一篇文章中，我們已經討論了如何將 index.js 與其他版面分開，這次我們要延續這個主題，並稍微提到元件的使用方式。

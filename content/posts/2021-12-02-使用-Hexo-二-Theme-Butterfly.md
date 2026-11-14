@@ -6,7 +6,7 @@ description = ''
 categories = ['筆記', 'Hexo']
 tags = ['HEXO']
 keywords = []
-image = '/img/Hexo/day_02_UseHexo/hexo.png'
+image = '/image/hexo.png'
 +++
 
 ## 前言

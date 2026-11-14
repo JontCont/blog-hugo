@@ -6,6 +6,7 @@ description = '記錄 Synology Drive Client 使用自訂網域時持續連線失
 categories = ['Synology', '問題排除']
 tags = ['Synology', 'Synology Drive Client', 'QuickConnect', 'Custom Domain']
 keywords = ['Synology Drive Client 連線失敗', 'Synology 自訂網域', 'QuickConnect', 'TCP 6690']
+image = '/image/cover-synology-drive.png'
 +++
 
 ## 前言
@@ -65,7 +66,7 @@ Windows／macOS Drive Client
 5. 勾選「啟用 QuickConnect」。
 6. 設定或確認自己的 `QuickConnect ID`。
 
-![啟用 QuickConnect 並確認 QuickConnect ID](image/2026-09-08%2010%2046%2014.png)
+![啟用 QuickConnect 並確認 QuickConnect ID](/image/2026-09-08%2010%2046%2014.png)
 
 ### 3-2 開放 Synology Drive 使用 QuickConnect
 
@@ -76,7 +77,7 @@ Windows／macOS Drive Client
 3. 在「應用程式／服務」清單中勾選 `Synology Drive Server`。
 4. 按下「套用」。
 
-![啟用 QuickConnect 轉送服務並勾選 Synology Drive Server](image/2026-09-08%2010%2046%2007.png)
+![啟用 QuickConnect 轉送服務並勾選 Synology Drive Server](/image/2026-09-08%2010%2046%2007.png)
 
 其中「QuickConnect 轉送服務」會在無法建立直接連線時，改由 Synology Relay Server 轉送。這樣不需要自行開放 `6690`，但經過轉送時，速度與延遲可能不如直接連線。
 

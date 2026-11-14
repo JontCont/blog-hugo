@@ -6,7 +6,7 @@ description = ''
 categories = ['後端技術', 'C#']
 tags = ['C#', 'VSC']
 keywords = ['C#', 'SignalR']
-image = '/img/dotnet/bg/cs_bg_005.png'
+image = '/image/cs_bg_005.png'
 +++
 
 # [Hub 類別](https://docs.microsoft.com/zh-tw/dotnet/api/microsoft.aspnetcore.signalr.hub?view=aspnetcore-6.0)

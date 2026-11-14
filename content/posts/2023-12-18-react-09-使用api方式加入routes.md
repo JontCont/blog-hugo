@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'React']
 tags = ['React']
 keywords = ['ES6', 'ReactJs', '網頁']
-image = '/img/Web/react/react_bg.png'
+image = '/image/react_bg.png'
 +++
 ---
 

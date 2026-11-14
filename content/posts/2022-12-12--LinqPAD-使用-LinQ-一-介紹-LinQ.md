@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'LINQPad']
 tags = ['LINQPad']
 keywords = []
-image = '/img/Linq-introduce/bg.jpg'
+image = '/image/bg.jpg'
 +++
 
 # 語言整合查詢 - Linq 簡介

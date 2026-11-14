@@ -6,7 +6,7 @@ description = ''
 categories = ['後端技術', 'C#']
 tags = ['C#', 'VSC', 'resXManager']
 keywords = ['C#', 'SignalR']
-image = '/img/dotnet/bg/cs_bg_resXManager.png'
+image = '/image/cs_bg_resXManager.png'
 +++
 
 ## 前言 

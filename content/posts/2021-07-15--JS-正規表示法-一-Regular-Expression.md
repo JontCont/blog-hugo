@@ -7,7 +7,7 @@ description = ''
 categories = ['前端技術', 'javascript']
 tags = ['javascript']
 keywords = ['ES6', '正規表示式', 'Regular', 'regex']
-image = '/img/Web/js/reg_bg.png'
+image = '/image/reg_bg.png'
 +++
 這裡主要紀錄使用規則，後續補上使用說明。
 

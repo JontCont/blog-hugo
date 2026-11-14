@@ -7,7 +7,7 @@ description = ''
 categories = ['前端技術', 'javascript']
 tags = ['javascript']
 keywords = ['ES6', '正規表示式', 'Regular', 'regex']
-image = '/img/Web/js/reg_bg.png'
+image = '/image/reg_bg.png'
 +++
 
 正規表示式是最常見的一個功能，不論是字串過濾、轉換、判斷相當實用。這篇使用JS方式使用，後續如果有空就會撰寫其他版本的寫法。

@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'React']
 tags = ['React']
 keywords = ['ES6', 'ReactJs', '網頁']
-image = '/img/Web/react/react_bg.png'
+image = '/image/react_bg.png'
 +++
 ## 前言
 完成作業初期，你可能會疑惑如何增加多個頁面或佈局，這些問題都需要使用到路由器（router）。前端架構將依賴路由器進行所需頁面和佈局之間的切換。而組件（component）則可以看作是我們的視圖，是可重複使用的程式碼塊，用於呈現單一元件的內容。在上一篇文章中，我們已經實現了組件的基礎並且理解了它的重要性。

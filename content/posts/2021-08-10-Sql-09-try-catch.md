@@ -6,7 +6,7 @@ description = ''
 categories = ['資料庫技術', 'SQL']
 tags = ['SQL']
 keywords = ['SQL']
-image = '/img/SQL/bg/bg_01.png'
+image = '/image/bg_01.png'
 +++
 
 近期沒什麼時間撰寫 line notify 章節，先混混幾章來撐過這幾周。

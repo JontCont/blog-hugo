@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'React']
 tags = ['React']
 keywords = ['ES6', 'ReactJs', '網頁']
-image = '/img/Web/react/react_bg.png'
+image = '/image/react_bg.png'
 +++
 ## 前言
 好一段時間沒有發表學習文了，主要是因為我花了兩個禮拜的時間研究這個東西，終於找到了原因和使用方式。雖然有ChatGPT的幫助，但還是沒有解決我現在要特別標記的主題。

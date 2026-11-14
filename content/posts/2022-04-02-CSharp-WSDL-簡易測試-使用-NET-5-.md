@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'C#']
 tags = ['C#', 'VSC']
 keywords = ['C#', 'WSDL']
-image = '/img/dotnet/bg/cs_bg_006_WSDL.png'
+image = '/image/cs_bg_006_WSDL.png'
 +++
 # 前言
 

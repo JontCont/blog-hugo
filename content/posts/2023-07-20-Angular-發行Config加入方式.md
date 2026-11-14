@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'Angular']
 tags = ['Angular']
 keywords = ['ES6', 'Angular', '網頁']
-image = '/img/Web/bg/Angular-bg-01.png'
+image = '/image/Angular-bg-01.png'
 +++
 
 近期在開發Angular專案都會需要發行專案檔案，往往 Windows 都會使用IIS來發行，但是在發行後架站會出現404錯誤，這時候就需要在Config加入路由設定。

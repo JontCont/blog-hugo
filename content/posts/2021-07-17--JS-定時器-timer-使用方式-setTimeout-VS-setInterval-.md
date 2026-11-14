@@ -7,7 +7,7 @@ description = ''
 categories = ['前端技術', 'javascript']
 tags = ['javascript']
 keywords = ['ES6', 'timer', 'setTimeout', '定時器', 'setInterval']
-image = '/img/Web/js/js-serialize/bg.png'
+image = '/image/bg.png'
 +++
 
 # 定時器（timer）

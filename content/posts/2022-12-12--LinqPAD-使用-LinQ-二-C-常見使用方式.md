@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'LINQPad']
 tags = ['LINQPad']
 keywords = []
-image = '/img/Linq-Use-Day01/bg.jpg'
+image = '/image/bg.jpg'
 +++
 
 # VSC - 所需的套件

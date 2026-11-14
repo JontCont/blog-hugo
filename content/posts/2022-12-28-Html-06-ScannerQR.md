@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'html']
 tags = ['front-end', '前端']
 keywords = []
-image = '/image/20221228_22-45-03.png'
+image = '/image/20221228_22-43-18.png'
 +++
 本次使用 html-qrcode 快速完成掃描工具，此套件已經把版面建立完成，所以只需要測試鏡頭有沒有進去在選項中即可。
 
