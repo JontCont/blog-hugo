@@ -68,6 +68,14 @@ defaultContentLanguage = 'zh-tw'
     icon = 'link'
 
 [[languages.zh-tw.menus.main]]
+  parent = 'categories'
+  name   = '小說庫'
+  url    = '/novels/'
+  weight = 4
+  [languages.zh-tw.menus.main.params]
+    icon = 'book'
+
+[[languages.zh-tw.menus.main]]
   name   = '歸檔'
   url    = '/archives/'
   weight = 3
@@ -175,6 +183,7 @@ defaultContentLanguage = 'zh-tw'
   mainSections = ['posts']
   description  = '分享技術筆記與開發心得'
   rssFullContent = true
+  novelReaderURL = 'https://jontcont.github.io/blog-novelist/reader/'
 
   [params.author]
     name   = 'John Conte'
