@@ -1,0 +1,62 @@
+{{- $sponsorEnabled := site.Params.sponsor.enabled | default true -}}
+{{- if and $sponsorEnabled (ne .Params.sponsor false) -}}
+{{- $sponsorUrl := site.Params.sponsor.url | default "https://portaly.cc/startfms5/support" -}}
+{{- $sponsorPageUrl := "/sponsor/" | relLangURL -}}
+<aside class="sponsor-callout" aria-label="{{ T "sponsorCardTitle" | default "贊助支持作者" }}">
+  <div class="sponsor-callout__glow" aria-hidden="true"></div>
+  <div class="sponsor-callout__inner">
+    <div class="sponsor-callout__badge-col">
+      <div class="sponsor-callout__icon-ring" aria-hidden="true">
+        <svg class="sponsor-callout__coffee-svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path class="steam steam--1" d="M6 2v3"/>
+          <path class="steam steam--2" d="M10 2v3"/>
+          <path class="steam steam--3" d="M14 2v3"/>
+          <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+          <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sponsor-callout__body">
+      <div class="sponsor-callout__eyebrow">
+        <span class="sponsor-callout__pulse" aria-hidden="true"></span>
+        <span>{{ T "sponsorCardEyebrow" | default "SUPPORT & SPONSOR" }}</span>
+      </div>
+      <h3 class="sponsor-callout__title">{{ T "sponsorCardTitle" | default "覺得這篇技術筆記對你有幫助嗎？" }}</h3>
+      <p class="sponsor-callout__desc">
+        {{ T "sponsorCardDesc" | default "如果這篇文章幫你省下了 Debug 與爬文的時間，歡迎透過 Portaly 請我喝杯咖啡，支持我持續產出高品質的 .NET、Azure 與 AI 實戰筆記！" }}
+      </p>
+
+      <div class="sponsor-callout__tiers" role="list" aria-label="贊助方案快速選擇">
+        <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-tier-pill" role="listitem">
+          <span class="sponsor-tier-pill__emoji">☕</span>
+          <span class="sponsor-tier-pill__text">一杯美式咖啡</span>
+        </a>
+        <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-tier-pill" role="listitem">
+          <span class="sponsor-tier-pill__emoji">🧋</span>
+          <span class="sponsor-tier-pill__text">深夜寫文補給</span>
+        </a>
+        <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-tier-pill" role="listitem">
+          <span class="sponsor-tier-pill__emoji">🚀</span>
+          <span class="sponsor-tier-pill__text">雲端與 AI 實驗室應援</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sponsor-callout__actions">
+      <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-btn sponsor-btn--primary">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span>{{ T "sponsorBtnPrimary" | default "前往 Portaly 贊助支持" }}</span>
+        <svg class="sponsor-btn__arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17L17 7"/><path d="M7 7h10v10"/>
+        </svg>
+      </a>
+      <a href="{{ $sponsorPageUrl }}" class="sponsor-btn sponsor-btn--ghost">
+        <span>{{ T "sponsorBtnSecondary" | default "了解贊助詳情" }}</span>
+      </a>
+    </div>
+  </div>
+</aside>
+{{- end -}}

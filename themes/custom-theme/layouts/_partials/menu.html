@@ -54,7 +54,13 @@ Renders a menu for the given menu ID.
       </ul>
     </li>
     {{- else }}
-    <li class="site-nav__item">
+    {{- $itemClass := "site-nav__item" }}
+    {{- if .Params.highlight }}
+      {{- $itemClass = "site-nav__item site-nav__item--sponsor" }}
+      {{- $existingClass := index $attrs "class" | default "" }}
+      {{- $attrs = merge $attrs (dict "class" (strings.TrimSpace (printf "%s site-nav__link--sponsor" $existingClass))) }}
+    {{- end }}
+    <li class="{{ $itemClass }}">
       <a
         {{- range $k, $v := $attrs }}
           {{- with $v }}

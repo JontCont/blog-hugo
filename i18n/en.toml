@@ -145,3 +145,24 @@ tableOfContents = "Table of Contents"
 [article.codeblock]
 copy = "Copy"
 copied = "Copied!"
+
+[sponsor]
+other = "☕ Sponsor"
+
+[sponsorCtaSidebar]
+other = "Buy Me a Coffee ☕"
+
+[sponsorCardEyebrow]
+other = "SUPPORT & SPONSOR"
+
+[sponsorCardTitle]
+other = "Found this technical note helpful?"
+
+[sponsorCardDesc]
+other = "If this article saved you hours of debugging, consider buying me a coffee on Portaly to support more in-depth notes on .NET, Azure, and AI!"
+
+[sponsorBtnPrimary]
+other = "Support on Portaly"
+
+[sponsorBtnSecondary]
+other = "More Ways to Support"

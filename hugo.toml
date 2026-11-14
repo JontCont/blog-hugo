@@ -81,6 +81,15 @@ defaultContentLanguage = 'zh-tw'
   [languages.zh-tw.menus.main.params]
     icon = 'user'
 
+[[languages.zh-tw.menus.main]]
+  identifier = 'sponsor'
+  name   = '☕ 贊助'
+  url    = '/sponsor/'
+  weight = 5
+  [languages.zh-tw.menus.main.params]
+    icon = 'heart'
+    highlight = true
+
 # ─── English Menu ──────────────────────────────────────
 [[languages.en.menus.main]]
   name   = 'Home'
@@ -134,6 +143,15 @@ defaultContentLanguage = 'zh-tw'
   [languages.en.menus.main.params]
     icon = 'user'
 
+[[languages.en.menus.main]]
+  identifier = 'sponsor'
+  name   = '☕ Sponsor'
+  url    = '/sponsor/'
+  weight = 5
+  [languages.en.menus.main.params]
+    icon = 'heart'
+    highlight = true
+
 # [[menus.social]]
 #   name = 'GitHub'
 #   url  = 'https://github.com'
@@ -165,7 +183,7 @@ defaultContentLanguage = 'zh-tw'
 
   [[params.social]]
     name = 'Discord'
-    url  = 'https://discord.gg/JbzpfqGJDF'
+    url  = 'https://discord.com/invite/7z9QcbAP5X'
     icon = 'discord'
 
   [[params.social]]
@@ -177,6 +195,34 @@ defaultContentLanguage = 'zh-tw'
     name = 'LinkedIn'
     url  = 'https://www.linkedin.com/in/%E5%9C%8B%E5%8B%9B-%E9%A6%AC-760860201/'
     icon = 'linkedin'
+
+  [[params.social]]
+    name = 'Instagram'
+    url  = 'https://www.instagram.com/johncons_rd/'
+    icon = 'instagram'
+
+  [[params.social]]
+    name = 'Threads'
+    url  = 'https://www.threads.com/@johncons_rd'
+    icon = 'threads'
+
+  [[params.social]]
+    name = 'Facebook'
+    url  = 'https://www.facebook.com/john.conte.749662/'
+    icon = 'facebook'
+
+  [[params.social]]
+    name = 'Portaly'
+    url  = 'https://portaly.cc/startfms5/support'
+    icon = 'coffee'
+
+  [params.sponsor]
+    enabled  = true
+    url      = 'https://portaly.cc/startfms5/support'
+    platform = 'Portaly'
+    handle   = 'startfms5'
+    title    = '覺得這篇技術筆記對你有幫助嗎？'
+    subtitle = '如果這篇文章幫你省下了 Debug 與爬文的時間，歡迎請我喝杯咖啡，支持我持續產出高品質的 .NET、Azure 與 AI 實戰筆記！'
 
   [params.footer]
     since      = 2021
