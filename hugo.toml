@@ -6,13 +6,13 @@ hasCJKLanguage = true
 defaultContentLanguage = 'zh-tw'
 
 [languages.zh-tw]
-  languageCode = 'zh-TW'
-  languageName = '繁體中文'
+  locale = 'zh-TW'
+  label = '繁體中文'
   weight = 1
 
 [languages.en]
-  languageCode = 'en'
-  languageName = 'English'
+  locale = 'en'
+  label = 'English'
   weight = 2
   [languages.en.params]
     description = 'Tech notes & dev insights'
