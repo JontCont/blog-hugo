@@ -162,6 +162,19 @@ main,header,footer { display: block; }
   background: var(--surface);
 }
 
+.novel-comments {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2rem clamp(20px, 5vw, 60px) 4rem;
+  border-top: 1px solid var(--border);
+}
+.novel-comments[hidden] { display: none; }
+.novel-comments h2 {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+}
+
 @media (max-width: 600px) {
   .novel-library-shell .novel-reader-frame {
     height: calc(100vh - 61px);

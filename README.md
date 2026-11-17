@@ -114,6 +114,8 @@ theme = 'custom-theme'
 
 文章頁的留言使用 GitHub Discussions 與 Giscus；訪客需要登入 GitHub 才能留言。可在 `hugo.toml` 的 `[params.comments]` 關閉留言。留言依文章網址路徑對應，變更網址可能導致無法找到原本的討論。
 
+小說庫以 iframe 嵌入獨立閱讀器；為避免 Giscus 阻擋跨網域巢狀 iframe，小說留言板顯示在部落格外層，並依閱讀器目前的作品或章節切換。閱讀器與部落格需要各自部署最新版本。
+
 ## GitHub Pages 部署
 
 本專案使用 GitHub Actions 自動部署至 GitHub Pages。

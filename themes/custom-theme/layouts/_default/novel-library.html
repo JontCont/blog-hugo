@@ -1,12 +1,79 @@
 {{ define "main" }}
   <section class="novel-library-shell">
     {{ with site.Params.novelReaderURL }}
+      <script src="{{ printf "%s/comments.js" (strings.TrimSuffix "/" .) }}"></script>
       <iframe
         class="novel-reader-frame"
         src="{{ . }}"
         title="{{ $.Title }}"
         loading="eager"
       ></iframe>
+      <section class="novel-comments" aria-labelledby="novel-comments-title" hidden>
+        <h2 id="novel-comments-title" data-comments-title>留言</h2>
+        <p data-comments-error role="status" hidden></p>
+        <div class="giscus"></div>
+      </section>
+      <script>
+        (function () {
+          const frame = document.querySelector('.novel-reader-frame');
+          const section = document.querySelector('.novel-comments');
+          if (typeof window.createNovelComments !== 'function') {
+            console.error('無法載入小說留言板，請在小說站另開留言。');
+            return;
+          }
+
+          const readerURL = new URL(frame.src);
+          const comments = window.createNovelComments(section);
+          const returnHashKey = 'novelist-giscus-return-hash';
+          if (new URL(location.href).searchParams.has('giscus')) {
+            try {
+              const returnHash = sessionStorage.getItem(returnHashKey);
+              if (returnHash) {
+                readerURL.hash = returnHash;
+                frame.src = readerURL.href;
+              }
+            } catch (error) {
+              console.error('無法還原留言登入前的頁面。', error);
+            }
+          }
+
+          window.addEventListener('message', function (event) {
+            if (event.source !== frame.contentWindow || event.origin !== readerURL.origin || !event.data) return;
+            if (event.data.type === 'novelist:show-comments') {
+              if (!section.hidden) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              return;
+            }
+            if (event.data.type !== 'novelist:route') return;
+
+            const route = event.data.comments;
+            if (!route) {
+              comments.hide();
+              return;
+            }
+            if (typeof route.term !== 'string' || typeof route.backLink !== 'string' ||
+                typeof route.hash !== 'string' || !['作品留言', '章節留言'].includes(route.title)) return;
+            let backlink;
+            try {
+              backlink = new URL(route.backLink);
+            } catch (error) {
+              console.error('小說留言連結無效。', error);
+              return;
+            }
+            if (backlink.origin !== readerURL.origin || backlink.pathname !== readerURL.pathname ||
+                backlink.hash !== route.hash) return;
+            try {
+              sessionStorage.setItem(returnHashKey, route.hash);
+            } catch (error) {
+              console.error('無法保存留言登入前的頁面。', error);
+            }
+            comments.show(route.term, route.title, backlink.href);
+          });
+
+          frame.addEventListener('load', function () {
+            frame.contentWindow.postMessage({ type: 'novelist:connect' }, readerURL.origin);
+          });
+        })();
+      </script>
     {{ end }}
   </section>
 {{ end }}
