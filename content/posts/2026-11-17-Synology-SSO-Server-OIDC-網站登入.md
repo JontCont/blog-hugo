@@ -1,6 +1,6 @@
 +++
 title = '【Synology】- 使用 SSO Server 與 OIDC 串接網站登入'
-date = '2026-11-17T11:28:00'
+date = '2026-11-17T11:28:00+08:00'
 slug = 'Synology-SSO-Server-OIDC-網站登入'
 description = '記錄如何設定 Synology SSO Server 的 OIDC 服務，並以旅程網站為例說明登入流程與用戶端設定。'
 categories = ['Synology', '後端技術']
