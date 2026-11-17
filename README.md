@@ -43,6 +43,8 @@ hugo server -D --bind 127.0.0.1 --port 1313
 
 開啟瀏覽器前往 [http://localhost:1313](http://localhost:1313)
 
+本機 `hugo server` 與 `npm run build:preview` 不會載入 AdSense 腳本；正式環境建置才會載入。
+
 ### 建置靜態檔案
 
 ```bash

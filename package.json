@@ -16,7 +16,7 @@
     "serve": "hugo server -D",
     "serve:prod": "hugo server",
     "build": "hugo --minify",
-    "build:preview": "hugo -D --minify",
+    "build:preview": "hugo -D --environment development --minify",
     "clean": "hugo --cleanDestinationDir",
     "test:e2e": "playwright test",
     "test:e2e:homepage": "playwright test --grep @workitem:homepage-core-coverage"
