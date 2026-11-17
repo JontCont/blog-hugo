@@ -50,6 +50,9 @@
           </div>
         {{ end }}
       </footer>
+      {{ if and (eq .Section "posts") site.Params.comments.enabled }}
+        {{ partial "comments.html" . }}
+      {{ end }}
     </article>
 
     {{ if $hasToc }}

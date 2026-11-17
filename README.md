@@ -112,6 +112,8 @@ theme = 'custom-theme'
 > GitHub Pages 部署時會由 workflow 使用 `--baseURL` 覆蓋為線上網址，
 > 本機開發保持 localhost 設定即可。
 
+文章頁的留言使用 GitHub Discussions 與 Giscus；訪客需要登入 GitHub 才能留言。可在 `hugo.toml` 的 `[params.comments]` 關閉留言。留言依文章網址路徑對應，變更網址可能導致無法找到原本的討論。
+
 ## GitHub Pages 部署
 
 本專案使用 GitHub Actions 自動部署至 GitHub Pages。

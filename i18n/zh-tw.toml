@@ -133,6 +133,9 @@ other = "此標籤目前收錄 {{ .Count }} 篇文章。"
 [relatedPosts]
 other = "相關文章"
 
+[comments]
+other = "留言"
+
 [backToTags]
 other = "回標籤總覽"
 

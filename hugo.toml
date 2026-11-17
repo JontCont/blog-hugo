@@ -283,7 +283,7 @@ defaultContentLanguage = 'zh-tw'
       enabled = true
 
   [params.comments]
-    enabled = false
+    enabled = true
 
   [params.opengraph.twitter]
     card = 'summary_large_image'

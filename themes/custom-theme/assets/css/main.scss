@@ -640,6 +640,16 @@ main,header,footer { display: block; }
   margin-top: 2rem;
   padding-top: 1.25rem;
 }
+.article-comments {
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border);
+}
+.article-comments__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+}
 .article-footer__actions { display: flex; }
 .article-header__actions { margin-top: 0.85rem; }
 

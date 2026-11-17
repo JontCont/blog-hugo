@@ -133,6 +133,9 @@ other = "This tag currently has {{ .Count }} posts."
 [relatedPosts]
 other = "Related posts"
 
+[comments]
+other = "Comments"
+
 [backToTags]
 other = "Back to tags"
 
