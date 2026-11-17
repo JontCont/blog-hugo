@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'html']
 tags = ['front-end', '前端']
 keywords = ['HTML', 'scrollbar', '拉軸', '網頁']
-image = '/img/html-srcollbar/scrollbar.jpg'
+image = '/image/scrollbar.jpg'
 +++
 ## 前言
 近期遇到很多UI介面 scrollbar 都不同樣式或是將 scrollbar 用消失減少版面佔住的機會。

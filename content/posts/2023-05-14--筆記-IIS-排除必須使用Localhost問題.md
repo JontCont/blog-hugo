@@ -7,7 +7,7 @@ description = ''
 categories = ['筆記', '生活雜記']
 tags = ['iis']
 keywords = []
-image = '/img/Note/IIS/bg.png'
+image = '/image/bg.png'
 +++
 
 

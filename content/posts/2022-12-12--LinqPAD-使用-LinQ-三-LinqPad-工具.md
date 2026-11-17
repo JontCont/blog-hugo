@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'LINQPad']
 tags = ['LINQPad']
 keywords = []
-image = '/img/linq_use_day02/bg.png'
+image = '/image/bg.png'
 +++
 
 如果要繼續深入使用 LinQ ，那一定要說一下最近使用的工具 LinqPad。

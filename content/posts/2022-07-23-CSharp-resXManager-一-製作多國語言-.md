@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'C#']
 tags = ['C#', 'VSC', 'resXManager']
 keywords = ['C#', 'SignalR']
-image = '/img/dotnet/bg/cs_bg_resXManager.png'
+image = '/image/cs_bg_resXManager.png'
 +++
 ## 前言
 開發時期，許多人會注意開發最後須要有環境去做切換語言的動作。使用多國語言處理方式有很多種，如果使用老派一點可以使用Excel方式讀取指定要讀取的文字，可以參考NPOI、LinqToExcel 兩種套件效果會相當不錯。

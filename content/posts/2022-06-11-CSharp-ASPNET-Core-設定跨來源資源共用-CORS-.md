@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'C#']
 tags = ['C#', 'core']
 keywords = []
-image = '/img/dotnet/bg/cs_bg_005.jpg'
+image = '/image/cs_bg_005.jpg'
 +++
 
 # Cors 跨來源資源共用

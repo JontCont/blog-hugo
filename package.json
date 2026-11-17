@@ -11,6 +11,13 @@
     "@types/node": "^26.1.1"
   },
   "scripts": {
+    "start": "hugo server -D",
+    "dev": "hugo server -D",
+    "serve": "hugo server -D",
+    "serve:prod": "hugo server",
+    "build": "hugo --minify",
+    "build:preview": "hugo -D --minify",
+    "clean": "hugo --cleanDestinationDir",
     "test:e2e": "playwright test",
     "test:e2e:homepage": "playwright test --grep @workitem:homepage-core-coverage"
   },

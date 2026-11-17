@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'html']
 tags = ['front-end', '前端']
 keywords = []
-image = '/image/20221228_22-45-03.png'
+image = '/image/20221228_22-43-18.png'
 +++
 
 近期 "電腦攝影機" 可是說需要與人視訊時候最重要的設備，對於我來說這東西可能是不常使用的消耗品，本次案例使用手機轉到電腦設備把它當作我們本次作品。

@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'LINQPad']
 tags = ['LINQPad']
 keywords = []
-image = '/img/Linq-Use-Day03/bg.png'
+image = '/image/bg.png'
 +++
 LinQ 使用join 需要知道Outer及Inner兩個資料型別物件。
 

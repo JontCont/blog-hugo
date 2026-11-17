@@ -7,7 +7,7 @@ description = ''
 categories = ['前端技術', 'javascript']
 tags = ['javascript']
 keywords = ['ES6', 'serialize', '網頁']
-image = '/img/Web/js/js-serialize/bg.png'
+image = '/image/bg.png'
 +++
 近期整理公司的 JavaScript 發現很多人使用著直接抓取 val()，繼上一篇提到 typeof 後，我又馬上做出 ```serialize()``` 章節，希望大家只要是全讀範圍的 input 請使用 ```serialize()``` 減少 ```undefined```問題。 
 

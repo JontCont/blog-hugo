@@ -6,7 +6,7 @@ description = ''
 categories = ['後端技術', 'C#']
 tags = ['C#', 'VSC']
 keywords = ['C#', 'Net5', 'VSC']
-image = '/img/dotnet/bg/cs_bg_001.png'
+image = '/image/cs_bg_001.png'
 +++
 
 ## 前言 

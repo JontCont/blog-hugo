@@ -145,3 +145,24 @@ tableOfContents = "目錄"
 [article.codeblock]
 copy = "複製"
 copied = "已複製！"
+
+[sponsor]
+other = "☕ 贊助"
+
+[sponsorCtaSidebar]
+other = "請我喝杯咖啡 ☕"
+
+[sponsorCardEyebrow]
+other = "SUPPORT & SPONSOR"
+
+[sponsorCardTitle]
+other = "覺得這篇技術筆記對你有幫助嗎？"
+
+[sponsorCardDesc]
+other = "如果這篇文章幫你省下了 Debug 與爬文的時間，歡迎透過 Portaly 請我喝杯咖啡，支持我持續產出高品質的 .NET、Azure 與 AI 實戰筆記！"
+
+[sponsorBtnPrimary]
+other = "前往 Portaly 贊助支持"
+
+[sponsorBtnSecondary]
+other = "了解贊助詳情"

@@ -7,7 +7,7 @@ description = ''
 categories = ['DevOps', 'Github']
 tags = ['Github']
 keywords = ['Github', 'Token']
-image = '/img/GitHub/bg/bg_01.jpg'
+image = '/image/bg_01.jpg'
 +++
 
 # Personal access tokens

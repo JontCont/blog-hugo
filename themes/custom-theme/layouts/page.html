@@ -37,6 +37,10 @@
         {{ .Content }}
       </div>
 
+      {{ if or (eq .Section "posts") (eq .Slug "about") }}
+        {{ partial "sponsor-card.html" . }}
+      {{ end }}
+
       <footer class="article-footer">
         {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

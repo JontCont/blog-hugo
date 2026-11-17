@@ -6,7 +6,7 @@ description = ''
 categories = ['後端技術', 'C#']
 tags = ['UnitTest', '單元測試', 'C#']
 keywords = ['UnitTest', 'C#']
-image = '/img/UnitTest/unit.png'
+image = '/image/unit.png'
 +++
 
 ## 前言

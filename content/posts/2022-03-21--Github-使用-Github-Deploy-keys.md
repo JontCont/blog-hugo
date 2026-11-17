@@ -7,7 +7,7 @@ description = ''
 categories = ['DevOps', 'Github']
 tags = ['Github']
 keywords = ['Github', 'Deploy keys', 'ssh']
-image = '/img/GitHub/bg/bg_01.jpg'
+image = '/image/bg_01.jpg'
 +++
 # Deploy keys
 透過設定 Deploy keys 可以避免掉每次 push 都要輸入帳密的流程

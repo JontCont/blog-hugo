@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'html']
 tags = ['front-end', '前端']
 keywords = ['HTML', 'robots']
-image = '/img/Web/bg/html_01_bg.png'
+image = '/image/html_01_bg.png'
 +++
 
 ## 前言

@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'Angular']
 tags = ['Angular']
 keywords = ['ES6', 'Angular', '網頁']
-image = '/img/Web/bg/Angular-bg-01.png'
+image = '/image/Angular-bg-01.png'
 +++
 本篇主要備註、紀錄 Angular component 的生命週期，方便之後查詢。
 

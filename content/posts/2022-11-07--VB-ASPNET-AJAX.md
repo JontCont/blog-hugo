@@ -7,7 +7,7 @@ description = ''
 categories = ['後端技術', 'VB']
 tags = ['VB']
 keywords = ['Ajax', 'VB', 'Asp.Net']
-image = '/img/Web/js/Ajax/ajax-logo.jpg'
+image = '/image/ajax-logo.jpg'
 +++
 
 

@@ -6,7 +6,7 @@ description = ''
 categories = ['資料庫技術', 'MS SQL']
 tags = ['SQL']
 keywords = ['SQL']
-image = '/img/SQL/bg/bg_01.png'
+image = '/image/bg_01.png'
 +++
 
 T-SQL 平常使用都會直接 Update、Insert、Delet 之類動作，但是在很多時候會有不小心輸入錯誤的問題。平常如果再已經上線、正式使用資料庫時候非常建議BEGIN TRIN ，可以先確認完畢資料後再同步交易或是回復交易。

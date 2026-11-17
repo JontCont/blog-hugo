@@ -6,7 +6,7 @@ description = ''
 categories = ['前端技術', 'React']
 tags = ['React']
 keywords = ['ES6', 'ReactJs', '網頁']
-image = '/img/Web/react/react_bg.png'
+image = '/image/react_bg.png'
 +++
 ## 前言
 近期會慢慢研究 react 使用方式，今後會使用 TS 來完成專案，並包含其他前端架購。本篇使用以下版本，若無法正常執行請確認版本再進行作業。

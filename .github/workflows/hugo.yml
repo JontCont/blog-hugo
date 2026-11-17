@@ -33,6 +33,14 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Install Dart Sass
+        run: |
+          DART_SASS_VERSION="1.83.4"
+          curl -sL "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" | tar -xz
+          sudo cp -r dart-sass/* /usr/local/bin/
+          rm -rf dart-sass
+          sass --version
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:

@@ -1,0 +1,249 @@
+{{ define "main" }}
+  {{ $sponsorUrl := site.Params.sponsor.url | default "https://portaly.cc/startfms5/support" }}
+  {{ $avatar := or site.Params.author.avatar site.Params.sidebar.avatar }}
+  {{ $authorName := site.Params.author.name | default "John Conte" }}
+  {{ $authorBio := site.Params.author.bio | default "全端軟體工程師，專注 C# / .NET、Azure 雲端架構與 AI 實戰應用。" }}
+
+  <div class="sponsor-page">
+    {{/* ── Hero Section ──────────────────────────────────────── */}}
+    <section class="sponsor-hero card-surface">
+      <div class="sponsor-hero__ambient" aria-hidden="true"></div>
+      <div class="sponsor-hero__content">
+        <div class="sponsor-hero__eyebrow">
+          <span class="sponsor-hero__pulse" aria-hidden="true"></span>
+          <span>CREATOR SUPPORT · 贊助與支持</span>
+        </div>
+        <h1 class="sponsor-hero__title">支持技術創作，<br>讓實戰經驗持續傳遞</h1>
+        <p class="sponsor-hero__lead">
+          每一篇深入的架構筆記與踩坑指南，背後都是無數小時的實測與整理。如果這個部落格曾為你省下 Debug 時間或帶來啟發，歡迎透過 <strong>Portaly</strong> 請我喝杯咖啡！
+        </p>
+
+        <div class="sponsor-hero__actions">
+          <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-btn sponsor-btn--primary sponsor-btn--lg">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span>前往 Portaly 贊助支持</span>
+            <svg class="sponsor-btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17L17 7"/><path d="M7 7h10v10"/>
+            </svg>
+          </a>
+
+          <button type="button" class="sponsor-btn sponsor-btn--ghost sponsor-btn--lg" id="copy-sponsor-link" data-sponsor-url="{{ $sponsorUrl }}">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <span id="copy-sponsor-text">複製贊助連結</span>
+          </button>
+        </div>
+      </div>
+
+      {{/* Portaly Creator Pass Card */}}
+      <div class="sponsor-pass">
+        <div class="sponsor-pass__card">
+          <div class="sponsor-pass__header">
+            <span class="sponsor-pass__platform">PORTALY CREATOR PASS</span>
+            <span class="sponsor-pass__status">● ACTIVE</span>
+          </div>
+
+          <div class="sponsor-pass__profile">
+            {{ with $avatar }}
+              <img class="sponsor-pass__avatar" src="{{ . | relURL }}" alt="{{ $authorName }}">
+            {{ end }}
+            <div class="sponsor-pass__info">
+              <h2 class="sponsor-pass__name">{{ $authorName }}</h2>
+              <p class="sponsor-pass__handle">@startfms5</p>
+            </div>
+          </div>
+
+          <p class="sponsor-pass__bio">{{ $authorBio }}</p>
+
+          <div class="sponsor-pass__url-box">
+            <span class="sponsor-pass__url-icon" aria-hidden="true">🔗</span>
+            <code class="sponsor-pass__url">portaly.cc/startfms5/support</code>
+          </div>
+
+          <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-pass__cta">
+            <span>開啟傳送門 Portaly</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {{/* ── Sponsorship Tiers ─────────────────────────────────── */}}
+    <section class="sponsor-section">
+      <div class="sponsor-section__head">
+        <p class="sponsor-section__eyebrow">SPONSORSHIP TIERS</p>
+        <h2>選擇你的應援方式</h2>
+        <p class="sponsor-section__sub">點擊任一方案皆可前往 Portaly 自由選擇或自訂贊助金額</p>
+      </div>
+
+      <div class="sponsor-tiers-grid">
+        {{/* Tier 1 */}}
+        <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-tier-card card-surface">
+          <div class="sponsor-tier-card__top">
+            <span class="sponsor-tier-card__icon" aria-hidden="true">☕</span>
+            <span class="sponsor-tier-card__tag">輕鬆應援</span>
+          </div>
+          <h3 class="sponsor-tier-card__title">一杯濃縮咖啡</h3>
+          <p class="sponsor-tier-card__desc">
+            剛好透過某篇筆記解決了棘手的 Bug？隨手請我喝杯熱美式，讓我在週末寫文時保持滿滿專注力！
+          </p>
+          <div class="sponsor-tier-card__footer">
+            <span class="sponsor-tier-card__action">前往贊助 →</span>
+          </div>
+        </a>
+
+        {{/* Tier 2 (Featured) */}}
+        <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-tier-card sponsor-tier-card--featured card-surface">
+          <div class="sponsor-tier-card__ribbon">🔥 最受歡迎</div>
+          <div class="sponsor-tier-card__top">
+            <span class="sponsor-tier-card__icon" aria-hidden="true">🧋</span>
+            <span class="sponsor-tier-card__tag sponsor-tier-card__tag--accent">能量補給</span>
+          </div>
+          <h3 class="sponsor-tier-card__title">深夜寫文補給站</h3>
+          <p class="sponsor-tier-card__desc">
+            支持長篇系列文章、系統架構圖繪製與完整範例程式碼整理，陪伴每一個挑燈夜戰的技術寫作夜晚。
+          </p>
+          <div class="sponsor-tier-card__footer">
+            <span class="sponsor-tier-card__action">前往贊助 →</span>
+          </div>
+        </a>
+
+        {{/* Tier 3 */}}
+        <a href="{{ $sponsorUrl }}" target="_blank" rel="noopener" class="sponsor-tier-card card-surface">
+          <div class="sponsor-tier-card__top">
+            <span class="sponsor-tier-card__icon" aria-hidden="true">🚀</span>
+            <span class="sponsor-tier-card__tag">深度支持</span>
+          </div>
+          <h3 class="sponsor-tier-card__title">雲端與 AI 實驗室應援</h3>
+          <p class="sponsor-tier-card__desc">
+            分擔 Azure 雲端測試環境、LLM API Token 消耗與開源工具實測成本，催生更多硬核企業級實戰文章！
+          </p>
+          <div class="sponsor-tier-card__footer">
+            <span class="sponsor-tier-card__action">前往贊助 →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    {{/* ── Impact / Where Support Goes ───────────────────────── */}}
+    <section class="sponsor-impact card-surface">
+      <div class="sponsor-section__head">
+        <p class="sponsor-section__eyebrow">TRANSPARENCY & IMPACT</p>
+        <h2>你的贊助將用於哪些地方？</h2>
+      </div>
+
+      <div class="sponsor-impact__grid">
+        <div class="sponsor-impact__item">
+          <div class="sponsor-impact__icon">☁️</div>
+          <div>
+            <h3>雲端與 AI 實驗資源</h3>
+            <p>支應 Azure 雲端服務測試、OpenAI / Claude API Token 與向量資料庫等 POC 實測開銷。</p>
+          </div>
+        </div>
+        <div class="sponsor-impact__item">
+          <div class="sponsor-impact__icon">✍️</div>
+          <div>
+            <h3>深度專題與架構圖解</h3>
+            <p>投入更多時間撰寫 .NET 乾淨架構、Playwright E2E 自動化測試與 Enterprise RAG 實戰指南。</p>
+          </div>
+        </div>
+        <div class="sponsor-impact__item">
+          <div class="sponsor-impact__icon">💬</div>
+          <div>
+            <h3>部落格與開發者社群維運</h3>
+            <p>維持無廣告干擾的純淨閱讀體驗，並持續經營 Discord 技術交流社群與開源專案分享。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* ── Author Note & Free Support ────────────────────────── */}}
+    <div class="sponsor-bottom-grid">
+      <article class="article-shell card-surface sponsor-letter">
+        <div class="article-content">
+          {{ .Content }}
+        </div>
+      </article>
+
+      <aside class="sponsor-free-support card-surface">
+        <p class="sponsor-section__eyebrow">OTHER WAYS TO HELP</p>
+        <h3>不花錢也能支持我的方式 🙌</h3>
+        <p class="sponsor-free-support__lead">除了金錢贊助，以下行動對創作者來說同樣是最棒的鼓勵：</p>
+
+        <ul class="sponsor-free-list">
+          <li>
+            <a href="https://discord.com/invite/7z9QcbAP5X" target="_blank" rel="noopener" class="sponsor-free-link">
+              <span class="sponsor-free-link__icon">💬</span>
+              <div>
+                <strong>加入 Discord 社群</strong>
+                <span>一起討論 .NET、Azure 與 AI 實戰問題</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JontCont" target="_blank" rel="noopener" class="sponsor-free-link">
+              <span class="sponsor-free-link__icon">⭐</span>
+              <div>
+                <strong>到 GitHub 按顆 Star</strong>
+                <span>追蹤開源專案與最新實作範例程式碼</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/%E5%9C%8B%E5%8B%9B-%E9%A6%AC-760860201/" target="_blank" rel="noopener" class="sponsor-free-link">
+              <span class="sponsor-free-link__icon">💼</span>
+              <div>
+                <strong>連結 LinkedIn 專業人脈</strong>
+                <span>交流職涯經驗、系統架構與技術合作</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.threads.com/@johncons_rd" target="_blank" rel="noopener" class="sponsor-free-link">
+              <span class="sponsor-free-link__icon">🧵</span>
+              <div>
+                <strong>追蹤 Threads / Instagram (@johncons_rd)</strong>
+                <span>鎖定日常開發碎念、AI 新知與即時分享</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="sponsor-social-chips">
+          <a href="https://www.instagram.com/johncons_rd/" target="_blank" rel="noopener" class="sponsor-social-chip">📸 Instagram</a>
+          <a href="https://www.threads.com/@johncons_rd" target="_blank" rel="noopener" class="sponsor-social-chip">🧵 Threads</a>
+          <a href="https://www.facebook.com/john.conte.749662/" target="_blank" rel="noopener" class="sponsor-social-chip">📘 Facebook</a>
+          <a href="https://www.linkedin.com/in/%E5%9C%8B%E5%8B%9B-%E9%A6%AC-760860201/" target="_blank" rel="noopener" class="sponsor-social-chip">💼 LinkedIn</a>
+          <a href="https://discord.com/invite/7z9QcbAP5X" target="_blank" rel="noopener" class="sponsor-social-chip">💬 Discord</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('copy-sponsor-link');
+      const label = document.getElementById('copy-sponsor-text');
+      if (!btn || !label) return;
+      btn.addEventListener('click', async function () {
+        const url = btn.getAttribute('data-sponsor-url') || 'https://portaly.cc/startfms5/support';
+        try {
+          await navigator.clipboard.writeText(url);
+          const original = label.textContent;
+          label.textContent = '已複製連結！✨';
+          btn.classList.add('is-copied');
+          setTimeout(function () {
+            label.textContent = original;
+            btn.classList.remove('is-copied');
+          }, 2200);
+        } catch (e) {
+          window.open(url, '_blank', 'noopener');
+        }
+      });
+    })();
+  </script>
+{{ end }}
