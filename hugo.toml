@@ -1,9 +1,10 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://blog.startfms.uk/'
 title = 'JConte'
 theme = 'custom-theme'
 paginate = 12
 hasCJKLanguage = true
 defaultContentLanguage = 'zh-tw'
+enableRobotsTXT = true
 
 [languages.zh-tw]
   locale = 'zh-TW'
