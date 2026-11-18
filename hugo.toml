@@ -181,6 +181,7 @@ enableRobotsTXT = true
 
 # ─── Theme Params ───────────────────────────────────────
 [params]
+  homeTitle    = 'JConte | 軟體工程師的技術筆記與開發心得'
   mainSections = ['posts']
   description  = '分享技術筆記與開發心得'
   rssFullContent = true
