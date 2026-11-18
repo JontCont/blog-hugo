@@ -188,7 +188,7 @@ defaultContentLanguage = 'zh-tw'
   [params.author]
     name   = 'John Conte'
     bio    = '全端軟體工程師，專注 C# / .NET、Azure 雲端架構與 AI 實戰應用。'
-    avatar = 'https://avatars.githubusercontent.com/u/52921053?v=4'
+    avatar = '/images/avatar.webp'
 
   [[params.social]]
     name = 'Discord'
@@ -245,7 +245,7 @@ defaultContentLanguage = 'zh-tw'
     compact = false
     emoji   = '💻'
     subtitle = '軟體工程師 / 技術筆記'
-    avatar   = 'https://avatars.githubusercontent.com/u/52921053?v=4'
+    avatar   = '/images/avatar.webp'
 
   [params.article]
     headingAnchor = true

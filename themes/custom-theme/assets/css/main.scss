@@ -1205,7 +1205,7 @@ main,header,footer { display: block; }
 /* empty cover-wrap shows the gradient background, no override needed */
 .entry-card__cover-wrap:hover .entry-card__cover { transform: scale(1.03); }
 .entry-card__cover {
-  aspect-ratio: 16/8;
+  aspect-ratio: 16/9;
   height: 100%;
   border-radius: 0;
   display: block;

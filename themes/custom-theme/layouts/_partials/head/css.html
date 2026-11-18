@@ -1,16 +1,10 @@
 {{- with resources.Get "css/main.scss" }}
   {{- $opts := dict
     "targetPath" "css/main.css"
-    "enableSourceMap" hugo.IsDevelopment
-    "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
+    "enableSourceMap" false
+    "outputStyle" "compressed"
   }}
   {{- with . | toCSS $opts }}
-    {{- if hugo.IsDevelopment }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}">
-    {{- else }}
-      {{- with . | fingerprint }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-      {{- end }}
-    {{- end }}
+    <style>{{ .Content | safeCSS }}</style>
   {{- end }}
 {{- end }}

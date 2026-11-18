@@ -9,18 +9,18 @@
       </div>
       <div class="blog-main" id="blog-main">
       {{ range $i, $post := $paginator.Pages }}
-        {{ $isFirst := eq $i 0 }}
+        {{ $isTop := lt $i 2 }}
         <article class="entry-card">
           <a href="{{ $post.RelPermalink }}" class="entry-card__cover-wrap" aria-label="{{ $post.Title }}">
             {{ with .Params.image }}
               {{ $img := . }}
               {{ if strings.HasPrefix $img "http" }}
-                <img class="entry-card__cover" src="{{ $img }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
+                <img class="entry-card__cover" src="{{ $img }}" alt="{{ $post.Title }}" width="800" height="450" {{ if $isTop }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
               {{ else }}
-                <img class="entry-card__cover" src="{{ (strings.TrimPrefix "/" $img) | relURL }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
+                <img class="entry-card__cover" src="{{ (strings.TrimPrefix "/" $img) | relURL }}" alt="{{ $post.Title }}" width="800" height="450" {{ if $isTop }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
               {{ end }}
             {{ else }}
-              <img class="entry-card__cover" src="{{ "images/default-cover.webp" | relURL }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
+              <img class="entry-card__cover" src="{{ "images/default-cover.webp" | relURL }}" alt="{{ $post.Title }}" width="800" height="450" {{ if $isTop }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
             {{ end }}
           </a>
           <div class="entry-card__body">
@@ -102,7 +102,7 @@
         <div class="sidebar-profile">
           {{ $avatar := or site.Params.author.avatar site.Params.sidebar.avatar }}
           {{ with $avatar }}
-            <img class="sidebar-profile__avatar" src="{{ . | relURL }}" alt="{{ site.Title }}">
+            <img class="sidebar-profile__avatar" src="{{ . | relURL }}" alt="{{ site.Title }}" width="88" height="88" loading="lazy" decoding="async">
           {{ else }}
             <div class="sidebar-profile__avatar sidebar-profile__avatar--fallback">
               <span>{{ substr site.Title 0 2 }}</span>
