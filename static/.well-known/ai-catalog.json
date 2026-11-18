@@ -1,0 +1,50 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "JConte Blog",
+    "identifier": "blog.startfms.uk",
+    "documentationUrl": "https://blog.startfms.uk/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:blog.startfms.uk:doc:llms-txt",
+      "displayName": "JConte Blog LLMs Guide",
+      "type": "text/markdown",
+      "url": "https://blog.startfms.uk/llms.txt",
+      "description": "LLM agent discovery and site navigation guide for JConte Blog.",
+      "tags": ["blog", "tech", "development"],
+      "capabilities": ["site-navigation", "tech-notes", "posts-index"],
+      "representativeQueries": [
+        "JConte blog articles overview",
+        "Kubernetes and DevOps notes",
+        "React map components implementation"
+      ]
+    },
+    {
+      "identifier": "urn:air:blog.startfms.uk:api:search-index",
+      "displayName": "JConte Blog Search Index",
+      "type": "application/json",
+      "url": "https://blog.startfms.uk/index.json",
+      "description": "Structured JSON index of all articles, titles, summaries, and URLs on JConte Blog.",
+      "tags": ["search", "index", "articles"],
+      "capabilities": ["fulltext-search", "article-discovery"],
+      "representativeQueries": [
+        "Search JConte blog posts",
+        "Find technical articles on blog.startfms.uk"
+      ]
+    },
+    {
+      "identifier": "urn:air:blog.startfms.uk:feed:rss",
+      "displayName": "JConte Blog RSS Feed",
+      "type": "application/rss+xml",
+      "url": "https://blog.startfms.uk/index.xml",
+      "description": "RSS 2.0 XML feed of the latest technical articles and blog updates.",
+      "tags": ["rss", "feed", "syndication"],
+      "capabilities": ["feed-subscription", "recent-posts"],
+      "representativeQueries": [
+        "Latest posts on JConte blog",
+        "RSS feed for new tech articles"
+      ]
+    }
+  ]
+}

@@ -4,6 +4,8 @@
 <meta name="google-site-verification" content="kC4C8zMlZAqH0bZNs83WLxiyjm79-5Ehg_CN6NaPiYY">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
+<link rel="ai-catalog" href="{{ "/.well-known/ai-catalog.json" | relURL }}">
+<link rel="ard" href="{{ "/.well-known/ard.json" | relURL }}">
 {{ if .IsHome }}
   {{ $posts := where site.RegularPages "Section" "posts" }}
   {{ with index ($posts.ByDate.Reverse) 0 }}
