@@ -9,7 +9,7 @@
     {
       "identifier": "urn:air:blog.startfms.uk:doc:llms-txt",
       "displayName": "JConte Blog LLMs Guide",
-      "type": "text/markdown",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://blog.startfms.uk/llms.txt",
       "description": "LLM agent discovery and site navigation guide for JConte Blog.",
       "tags": ["blog", "tech", "development"],
