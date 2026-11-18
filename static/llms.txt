@@ -1,0 +1,16 @@
+# JConte 技術筆記
+
+> 全端軟體工程師，專注 C# / .NET、Azure 雲端架構與 AI 實戰應用的個人技術部落格。
+
+## 網站資訊
+- 網站名稱: JConte
+- 網站網址: https://blog.startfms.uk/
+- 語言: 繁體中文 (zh-TW)
+- 作者: John Conte
+
+## 主要內容
+- [.NET / C# 筆記](https://blog.startfms.uk/categories/csharp/): C# 語言特性、ASP.NET Core 實戰與效能優化
+- [Azure 雲端筆記](https://blog.startfms.uk/categories/azure/): Azure 服務串接、雲端架構與部署心得
+- [AI 與工具教學](https://blog.startfms.uk/categories/ai/): AI 輔助開發、Prompt 技巧與自動化工作流
+- [前端技術筆記](https://blog.startfms.uk/categories/frontend/): React、Angular、Web 效能與最佳實踐
+- [小說閱讀庫](https://blog.startfms.uk/novels/): 小說閱讀專區與個人創作
