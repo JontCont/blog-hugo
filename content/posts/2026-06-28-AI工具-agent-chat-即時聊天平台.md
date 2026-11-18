@@ -6,7 +6,7 @@ description = '探索 agent-chat 如何透過非同步訊息機制與中介軟�
 categories = ['AI工具', '開發工具']
 tags = ['agent-chat', 'FastAPI', 'AI-Agent', '即時聊天', '非同步']
 keywords = ['agent-chat', 'FastAPI', 'AI 聊天室', '非同步通訊']
-image = '/image/agent_chat_cover.png'
+image = '/image/agent_chat_cover.webp'
 +++
 
 ## 前言

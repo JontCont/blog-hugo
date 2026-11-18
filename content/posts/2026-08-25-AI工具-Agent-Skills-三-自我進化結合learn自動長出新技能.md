@@ -6,7 +6,7 @@ description = '深入探討 AI 代理人的經驗沉澱與自我進化機制：�
 categories = ['AI工具', '開發工具']
 tags = ['AI-Skills', '/learn', '自我進化', 'Antigravity', 'Agentic-Workflow']
 keywords = ['/learn', 'Agent Skills', 'AI 自我進化', 'learning_proposal', 'Skill description', 'Antigravity learn']
-image = '/image/rules_bridge_cover.png'
+image = '/image/rules_bridge_cover.webp'
 +++
 
 ## 前言

@@ -6,7 +6,7 @@ description = '記錄如何設定 Synology SSO Server 的 OIDC 服務，並以�
 categories = ['Synology', '後端技術']
 tags = ['Synology', 'SSO', 'OIDC', '身分驗證']
 keywords = ['Synology SSO Server', 'OIDC', 'OpenID Connect', 'PKCE', '網站登入']
-image = '/image/cover-synology-sso-oidc.png'
+image = '/image/cover-synology-sso-oidc.webp'
 +++
 
 ## 前言

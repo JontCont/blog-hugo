@@ -20,19 +20,19 @@
 
     {{ if gt $postCount 0 }}
       <div class="blog-main blog-main--grid">
-        {{ range $posts }}
-          {{ $post := . }}
+        {{ range $i, $post := $posts }}
+          {{ $isFirst := eq $i 0 }}
           <article class="entry-card">
             <a href="{{ $post.RelPermalink }}" class="entry-card__cover-wrap" aria-label="{{ $post.Title }}">
               {{ with .Params.image }}
                 {{ $img := . }}
                 {{ if strings.HasPrefix $img "http" }}
-                  <img class="entry-card__cover" src="{{ $img }}" alt="{{ $post.Title }}" loading="lazy">
+                  <img class="entry-card__cover" src="{{ $img }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
                 {{ else }}
-                  <img class="entry-card__cover" src="{{ (strings.TrimPrefix "/" $img) | relURL }}" alt="{{ $post.Title }}" loading="lazy">
+                  <img class="entry-card__cover" src="{{ (strings.TrimPrefix "/" $img) | relURL }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
                 {{ end }}
               {{ else }}
-                <img class="entry-card__cover" src="{{ "images/default-cover.png" | relURL }}" alt="{{ $post.Title }}" loading="lazy">
+                <img class="entry-card__cover" src="{{ "images/default-cover.webp" | relURL }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
               {{ end }}
             </a>
 

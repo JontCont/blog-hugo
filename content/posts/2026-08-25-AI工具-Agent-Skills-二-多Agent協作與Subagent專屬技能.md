@@ -6,7 +6,7 @@ description = '深入探討多代理人架構（Multi-Agent System），解析 S
 categories = ['AI工具', '開發工具']
 tags = ['AI-Agent', 'Subagents', 'Agent-Skills', 'Antigravity', '多代理人']
 keywords = ['Subagent', 'Multi-Agent', 'Agent Skills', '多代理人協作', 'AI 開發團隊', 'Claude Code', 'GitHub Copilot']
-image = '/image/agent_chat_cover.png'
+image = '/image/agent_chat_cover.webp'
 +++
 
 ## 前言

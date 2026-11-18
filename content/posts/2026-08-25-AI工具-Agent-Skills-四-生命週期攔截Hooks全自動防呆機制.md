@@ -6,7 +6,7 @@ description = '深入解析 AI 代理人的生命週期鉤子（Lifecycle Hooks�
 categories = ['AI工具', '開發工具']
 tags = ['AI-Skills', 'Hooks', 'hooks.json', 'Antigravity', '自動化防呆']
 keywords = ['Hooks', 'hooks.json', 'Lifecycle Hooks', 'PreToolUse', 'PostToolUse', 'AI 防呆', 'Antigravity Hooks']
-image = '/image/rules_bridge_cover.png'
+image = '/image/rules_bridge_cover.webp'
 +++
 
 ## 前言

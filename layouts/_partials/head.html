@@ -1,7 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ else }}{{ site.Title }}{{ end }}{{ end }}">
 <meta name="google-site-verification" content="kC4C8zMlZAqH0bZNs83WLxiyjm79-5Ehg_CN6NaPiYY">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
 {{ if and hugo.IsProduction (not hugo.IsServer) }}

@@ -8,19 +8,19 @@
         <button type="button" class="view-toggle__btn" data-view-btn="grid">⊞ {{ T "gridView" }}</button>
       </div>
       <div class="blog-main" id="blog-main">
-      {{ range $paginator.Pages }}
-        {{ $post := . }}
+      {{ range $i, $post := $paginator.Pages }}
+        {{ $isFirst := eq $i 0 }}
         <article class="entry-card">
           <a href="{{ $post.RelPermalink }}" class="entry-card__cover-wrap" aria-label="{{ $post.Title }}">
             {{ with .Params.image }}
               {{ $img := . }}
               {{ if strings.HasPrefix $img "http" }}
-                <img class="entry-card__cover" src="{{ $img }}" alt="{{ $post.Title }}" loading="lazy">
+                <img class="entry-card__cover" src="{{ $img }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
               {{ else }}
-                <img class="entry-card__cover" src="{{ (strings.TrimPrefix "/" $img) | relURL }}" alt="{{ $post.Title }}" loading="lazy">
+                <img class="entry-card__cover" src="{{ (strings.TrimPrefix "/" $img) | relURL }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
               {{ end }}
             {{ else }}
-              <img class="entry-card__cover" src="{{ "images/default-cover.png" | relURL }}" alt="{{ $post.Title }}" loading="lazy">
+              <img class="entry-card__cover" src="{{ "images/default-cover.webp" | relURL }}" alt="{{ $post.Title }}" {{ if $isFirst }}loading="eager" fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
             {{ end }}
           </a>
           <div class="entry-card__body">
@@ -50,7 +50,7 @@
           {{ if $paginator.HasPrev }}
             <a class="pagination__link" href="{{ $paginator.Prev.URL }}" rel="prev">← {{ T "prevPage" }}</a>
           {{ else }}
-            <span class="pagination__link pagination__link--disabled">← {{ T "prevPage" }}</span>
+            <span class="pagination__link pagination__link--disabled" aria-disabled="true">← {{ T "prevPage" }}</span>
           {{ end }}
 
           {{ $current := $paginator.PageNumber }}
@@ -90,7 +90,7 @@
           {{ if $paginator.HasNext }}
             <a class="pagination__link" href="{{ $paginator.Next.URL }}" rel="next">{{ T "nextPage" }} →</a>
           {{ else }}
-            <span class="pagination__link pagination__link--disabled">{{ T "nextPage" }} →</span>
+            <span class="pagination__link pagination__link--disabled" aria-disabled="true">{{ T "nextPage" }} →</span>
           {{ end }}
         </nav>
       {{ end }}

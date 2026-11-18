@@ -6,7 +6,7 @@ description = '記錄 Synology Drive Client 使用自訂網域時持續連線失
 categories = ['Synology', '問題排除']
 tags = ['Synology', 'Synology Drive Client', 'QuickConnect', 'Custom Domain']
 keywords = ['Synology Drive Client 連線失敗', 'Synology 自訂網域', 'QuickConnect', 'TCP 6690']
-image = '/image/cover-synology-drive.png'
+image = '/image/cover-synology-drive.webp'
 +++
 
 ## 前言
