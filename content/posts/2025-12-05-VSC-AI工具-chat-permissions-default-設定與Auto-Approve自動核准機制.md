@@ -3,6 +3,7 @@ image = '/image/20251205_vscode_permissions_cover.webp'
 title = '【工具】VS Code / AI Agent 權限配置指南：chat.permissions.default 設定與 Auto Approve 自動核准機制'
 date = '2025-12-05T10:00:00'
 slug = 'VSC-AI工具-chat-permissions-default-設定與Auto-Approve自動核准機制'
+aliases = ['/posts/ai工具-chat-permissions-default-設定與auto-approve自動核准機制/']
 description = '解析 VS Code、Copilot Agent 與 Antigravity 工具中的 chat.permissions.default 設定，說明如何啟用 Auto Approve 自動核准機制以提升 AI 自動化開發效率與安全性控管。'
 categories = ['開發工具', 'VSCode']
 tags = ['VSCode', 'Copilot', 'Antigravity', 'AI', 'AutoApprove', '工具筆記']

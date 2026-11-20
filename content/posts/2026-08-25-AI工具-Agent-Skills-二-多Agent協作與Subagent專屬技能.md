@@ -2,6 +2,7 @@
 title = '【AI工具】Agent Skills (二) - 多 Agent 協作：為 Subagent 量身打造專屬技能'
 date = '2026-08-25'
 slug = 'agent-skills-multi-agent-subagent-collaboration'
+aliases = ['/2026/08/25/agent-skills-multi-agent-subagent-collaboration/']
 description = '深入探討多代理人架構（Multi-Agent System），解析 Subagent 來源、Token 經濟學、各大工具實作現況（Claude、Gemini、Copilot），以及如何為子代理人配置專屬 Skills 實現高效協作。'
 categories = ['AI工具', '開發工具']
 tags = ['AI-Agent', 'Subagents', 'Agent-Skills', 'Antigravity', '多代理人']

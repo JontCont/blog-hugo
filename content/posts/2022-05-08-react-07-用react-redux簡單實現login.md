@@ -2,6 +2,7 @@
 title = 'React (七) - 簡易製作Login 製作【內建 react-redux】'
 date = '2022-05-08'
 slug = 'react-07-用react-redux簡單實現login'
+aliases = ['/posts/react-07-用react-redix簡單實現login/']
 description = ''
 categories = ['前端技術', 'React']
 tags = ['React']

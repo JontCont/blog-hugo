@@ -3,6 +3,7 @@ title = '【筆記】如何讓Windows11 家用版開啟本機群組原則編輯�
 date = '2024-06-22T22:54:19'
 slug = '-筆記-如何讓Windows11-家用版開啟Local-Security-Policy'
 url = '/2024/06/22/-筆記-如何讓Windows11-家用版開啟Local-Security-Policy/'
+aliases = ['/2024/06/22/-筆記-如何讓Winodws11-家用版開啟Local-Security-Pokucy/']
 description = ''
 categories = ['筆記', '生活雜記']
 tags = []

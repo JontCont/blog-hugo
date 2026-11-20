@@ -2,6 +2,7 @@
 title = '【AI工具】Agent Skills (三) - 自我進化：結合 /learn 讓 AI 自動長出新技能'
 date = '2026-08-25'
 slug = 'agent-skills-self-evolution-learn'
+aliases = ['/2026/08/25/agent-skills-self-evolution-learn/']
 description = '深入探討 AI 代理人的經驗沉澱與自我進化機制：如何透過 /learn 指令將日常對話的除錯經驗轉化為專案資產、Rule 與 Skill 的自動分類，以及撰寫高命中率 Skill description 的黃金心法。'
 categories = ['AI工具', '開發工具']
 tags = ['AI-Skills', '/learn', '自我進化', 'Antigravity', 'Agentic-Workflow']

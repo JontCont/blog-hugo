@@ -3,6 +3,7 @@ title = '【Angular】error Unknown argument prod錯誤'
 date = '2023-07-21'
 slug = 'Angular-發佈時發生-error-Unknown-argument-prod-錯誤-'
 url = '/2023/07/21/Angular-發佈時發生-error-Unknown-argument-prod-錯誤-/'
+aliases = ['/2023/07/21/Angular-發佈時發生-error-Unknow-argument-prod-錯誤-/']
 description = ''
 categories = ['前端技術', 'Angular']
 tags = ['Angular']
