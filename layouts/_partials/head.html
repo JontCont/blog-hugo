@@ -1,13 +1,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ $pageTitle := site.Title }}
+{{ $pageDesc := .Description | default site.Params.description | default site.Title }}
 {{ if .IsHome }}
   {{ $pageTitle = site.Params.homeTitle | default site.Title }}
+{{ else if eq .Kind "term" }}
+  {{ if eq .Section "categories" }}
+    {{ $pageTitle = printf "%s 分類文章 | %s" .Title site.Title }}
+    {{ $pageDesc = printf "瀏覽 %s 技術部落格中屬於「%s」分類的所有技術筆記與開發實戰文章（共 %d 篇）。" site.Title .Title (len .Pages) }}
+  {{ else if eq .Section "tags" }}
+    {{ $pageTitle = printf "#%s 標籤文章 | %s" .Title site.Title }}
+    {{ $pageDesc = printf "探索 %s 技術部落格中標記為 #%s 的相關技術文章與開發心得（共 %d 篇）。" site.Title .Title (len .Pages) }}
+  {{ else }}
+    {{ $pageTitle = printf "%s | %s" .Title site.Title }}
+  {{ end }}
+{{ else if eq .Kind "taxonomy" }}
+  {{ if eq .Section "categories" }}
+    {{ $pageTitle = printf "全部分類總覽 | %s" site.Title }}
+    {{ $pageDesc = printf "瀏覽 %s 技術部落格的所有技術文章分類總覽。" site.Title }}
+  {{ else if eq .Section "tags" }}
+    {{ $pageTitle = printf "全部標籤總覽 | %s" site.Title }}
+    {{ $pageDesc = printf "瀏覽 %s 技術部落格的所有技術文章標籤總覽。" site.Title }}
+  {{ else }}
+    {{ $pageTitle = printf "%s | %s" .Title site.Title }}
+  {{ end }}
 {{ else }}
   {{ $pageTitle = printf "%s | %s" .Title site.Title }}
+  {{ if and .IsPage (not .Description) }}
+    {{ with .Summary }}
+      {{ $pageDesc = . | plainify | truncate 150 }}
+    {{ end }}
+  {{ end }}
 {{ end }}
-{{ $pageDesc := .Description | default site.Params.description | default site.Title }}
 <meta name="description" content="{{ $pageDesc }}">
+{{ if or (eq .Section "tags") (eq .Layout "search") (eq .Section "search") }}
+<meta name="robots" content="noindex, follow">
+{{ end }}
 <meta name="google-site-verification" content="kC4C8zMlZAqH0bZNs83WLxiyjm79-5Ehg_CN6NaPiYY">
 <title>{{ $pageTitle }}</title>
 <link rel="canonical" href="{{ .Permalink }}">

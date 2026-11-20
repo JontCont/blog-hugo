@@ -1,21 +1,26 @@
 {{ define "main" }}
   {{ $posts := .Pages.ByDate.Reverse }}
   {{ $postCount := len $posts }}
+  {{ $isCategory := eq .Section "categories" }}
 
   <section class="section-hero card-surface">
-    <p class="section-hero__eyebrow">{{ T "termEyebrow" }}</p>
-    <h1># {{ .Title }}</h1>
+    <p class="section-hero__eyebrow">{{ if $isCategory }}{{ T "categoryEyebrow" | default "分類主題" }}{{ else }}{{ T "termEyebrow" }}{{ end }}</p>
+    <h1>{{ if $isCategory }}{{ .Title }}{{ else }}# {{ .Title }}{{ end }}</h1>
     {{ if .Content }}
       <div class="section-hero__lead">{{ .Content }}</div>
     {{ else }}
-      <p class="section-hero__lead">{{ T "termLead" (dict "Count" $postCount) }}</p>
+      <p class="section-hero__lead">{{ if $isCategory }}{{ T "categoryLead" (dict "Count" $postCount) | default (printf "此分類目前收錄 %d 篇文章。" $postCount) }}{{ else }}{{ T "termLead" (dict "Count" $postCount) }}{{ end }}</p>
     {{ end }}
   </section>
 
   <section class="content-section">
     <div class="section-heading">
       <h2>{{ T "relatedPosts" }}</h2>
-      <a class="section-heading__link" href="{{ "/tags/" | relLangURL }}">{{ T "backToTags" }}</a>
+      {{ if $isCategory }}
+        <a class="section-heading__link" href="{{ "/categories/" | relLangURL }}">{{ T "backToCategories" | default "回分類總覽" }}</a>
+      {{ else }}
+        <a class="section-heading__link" href="{{ "/tags/" | relLangURL }}">{{ T "backToTags" }}</a>
+      {{ end }}
     </div>
 
     {{ if gt $postCount 0 }}

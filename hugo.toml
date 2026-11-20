@@ -11,15 +11,6 @@ enableRobotsTXT = true
   label = '繁體中文'
   weight = 1
 
-[languages.en]
-  locale = 'en'
-  label = 'English'
-  weight = 2
-  [languages.en.params]
-    description = 'Tech notes & dev insights'
-    [languages.en.params.sidebar]
-      subtitle = 'Software Engineer / Tech Notes'
-
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
 
@@ -96,68 +87,6 @@ enableRobotsTXT = true
   url    = '/sponsor/'
   weight = 5
   [languages.zh-tw.menus.main.params]
-    icon = 'heart'
-    highlight = true
-
-# ─── English Menu ──────────────────────────────────────
-[[languages.en.menus.main]]
-  name   = 'Home'
-  url    = '/'
-  weight = 1
-  [languages.en.menus.main.params]
-    icon = 'home'
-
-[[languages.en.menus.main]]
-  identifier = 'categories'
-  name   = 'Categories'
-  weight = 2
-  [languages.en.menus.main.params]
-    icon = 'categories'
-
-[[languages.en.menus.main]]
-  parent = 'categories'
-  name   = 'All Categories'
-  url    = '/categories/'
-  weight = 1
-  [languages.en.menus.main.params]
-    icon = 'categories'
-
-[[languages.en.menus.main]]
-  parent = 'categories'
-  name   = 'Tags'
-  url    = '/tags/'
-  weight = 2
-  [languages.en.menus.main.params]
-    icon = 'tag'
-
-[[languages.en.menus.main]]
-  parent = 'categories'
-  name   = 'Gallery'
-  url    = '/gallery/'
-  weight = 3
-  [languages.en.menus.main.params]
-    icon = 'link'
-
-[[languages.en.menus.main]]
-  name   = 'Archives'
-  url    = '/archives/'
-  weight = 3
-  [languages.en.menus.main.params]
-    icon = 'archives'
-
-[[languages.en.menus.main]]
-  name   = 'About'
-  url    = '/about/'
-  weight = 4
-  [languages.en.menus.main.params]
-    icon = 'user'
-
-[[languages.en.menus.main]]
-  identifier = 'sponsor'
-  name   = '☕ Sponsor'
-  url    = '/sponsor/'
-  weight = 5
-  [languages.en.menus.main.params]
     icon = 'heart'
     highlight = true
 

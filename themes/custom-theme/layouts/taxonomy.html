@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{ $terms := .Data.Terms.Alphabetical }}
   {{ $termCount := len $terms }}
+  {{ $isCategory := eq .Section "categories" }}
 
   <section class="section-hero card-surface">
     <p class="section-hero__eyebrow">{{ T "taxonomyEyebrow" }}</p>
@@ -8,14 +9,14 @@
     {{ if .Content }}
       <div class="section-hero__lead">{{ .Content }}</div>
     {{ else }}
-      <p class="section-hero__lead">{{ T "taxonomyLead" (dict "Count" $termCount) }}</p>
+      <p class="section-hero__lead">{{ if $isCategory }}{{ T "categoryTaxonomyLead" (dict "Count" $termCount) | default (printf "目前共有 %d 個分類，點擊即可查看相關文章。" $termCount) }}{{ else }}{{ T "taxonomyLead" (dict "Count" $termCount) }}{{ end }}</p>
     {{ end }}
   </section>
 
   <section class="taxonomy-shell card-surface">
     <div class="section-heading taxonomy-shell__head">
-      <h2>{{ T "allTags" }}</h2>
-      <span class="taxonomy-shell__count">{{ T "termCountLabel" (dict "Count" $termCount) }}</span>
+      <h2>{{ if $isCategory }}{{ T "allCategories" | default "全部分類" }}{{ else }}{{ T "allTags" }}{{ end }}</h2>
+      <span class="taxonomy-shell__count">{{ if $isCategory }}{{ T "categoryCountLabel" (dict "Count" $termCount) | default (printf "%d 個分類" $termCount) }}{{ else }}{{ T "termCountLabel" (dict "Count" $termCount) }}{{ end }}</span>
     </div>
 
     {{ if gt $termCount 0 }}
@@ -23,7 +24,7 @@
         {{ range $terms }}
           <article class="taxonomy-term-card">
             <h3>
-              <a href="{{ .Page.RelPermalink }}"># {{ .Page.LinkTitle }}</a>
+              <a href="{{ .Page.RelPermalink }}">{{ if $isCategory }}{{ .Page.LinkTitle }}{{ else }}# {{ .Page.LinkTitle }}{{ end }}</a>
             </h3>
             <p>{{ T "tagContainsPosts" (dict "Count" .Count) }}</p>
             <a class="taxonomy-term-card__action" href="{{ .Page.RelPermalink }}">{{ T "viewTagPosts" }}</a>
