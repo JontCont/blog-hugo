@@ -172,8 +172,8 @@ networks:
   ```
 
 > 💡 延伸閱讀：如果你對 port 設定、網路互通有疑問，推薦這兩篇：
-> - [Docker (四)- port設定篇(httpd)](./【Docker】04%20port設定篇(httpd).md)
-> - [Docker】使用network解決無法互通問題](./【Docker】使用network解決無法互通問題.md)
+> - [Docker (四)- port設定篇(httpd)](/2023/12/13/Docker-port設定篇-httpd-/)
+> - [【Docker】使用network解決無法互通問題](/2024/10/21/-Docker-使用network解決無法互通問題/)
 
 
 
